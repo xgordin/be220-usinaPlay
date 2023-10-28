@@ -1,0 +1,7 @@
+{
+  "name": "be220-unisaPlay",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
