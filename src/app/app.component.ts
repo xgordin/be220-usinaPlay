@@ -1,18 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Person, personMock} from 'src/mock-data/mock-data';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Home', url: '/folder/home', icon: 'home' },
+    { title: 'Programas', url: '/folder/programas', icon: 'stats-chart' },
+    { title: 'Saúde', url: '/folder/saude', icon: 'heart' },
+    { title: 'Exercícios', url: '/folder/exercicios', icon: 'barbell' },
+    { title: 'Conteúdos', url: '/folder/conteudos', icon: 'videocam' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  person = personMock
+
+
   constructor() {}
+
+  ngOnInit(): void {
+    
+  }
 }
+
+

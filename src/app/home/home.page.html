@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="flex-between items-center" style="margin:0px 5px" >
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+      <div style="padding-top: 10px">
+        <img
+          class="logo-header"
+          src="../assets/icon/LOGO-HORIZONTAL.png"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <app-notification-button></app-notification-button>
+      </div>
+    </div>
+
+    <app-user-card-info></app-user-card-info>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+</ion-content>
