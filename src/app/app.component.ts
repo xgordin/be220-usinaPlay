@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Person, personMock} from 'src/mock-data/mock-data';
+import { Person, personMock } from 'src/mock-data/mock-data';
+import { register } from 'swiper/element/bundle';
+register();
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,14 +16,9 @@ export class AppComponent implements OnInit {
     { title: 'Conteúdos', url: '/folder/conteudos', icon: 'videocam' },
   ];
 
-  person = personMock
-
+  person = personMock;
 
   constructor() {}
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 }
-
-

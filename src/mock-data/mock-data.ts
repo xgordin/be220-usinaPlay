@@ -34,7 +34,7 @@ const notificationMock: Notification[] = [
   }
 ];
 
-export {  };
+
 
 
   export { Person, personMock, Notification, notificationMock };
